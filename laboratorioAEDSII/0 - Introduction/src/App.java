@@ -1,6 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
 
+//https://www.techiedelight.com/pt/generate-random-character-java/
+
 public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println("Hello, World!");
