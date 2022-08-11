@@ -7,3 +7,5 @@ A Disciplina terá divisão entre Teoria e Laboratório, ambos os codigos podem 
 
 - [Teórico AEDS II]()
 - [Laboratório AEDS II]()
+
+Como IDE utilizaremos o ECLIPSE e uma IDE Online de nome [Replit](https://replit.com/languages/java10).
