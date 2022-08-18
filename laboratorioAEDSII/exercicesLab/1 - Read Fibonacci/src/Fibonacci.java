@@ -2,9 +2,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fibonacci {
+    static int calculoFibonacci(){
+        
+    }
     
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+            //PARTE 1
+            //-----------------------------------------------------------------------------
             //Saber o tamanho do vetor
             int tamanhoVetor;
             System.out.print("Informe quantos dígitos terá a Sequência Fibonacci: ");
@@ -15,28 +20,38 @@ public class Fibonacci {
             vetorFibonacci = new int[tamanhoVetor];
             
             //Calcular Fibonacci
-            int digitoAnterior1 = 0, digitoAnterior2= 1, digitoFibonacci = 0;
+            int digito1 = 0, digito2= 1, novoDigitoFibonacci = 0;
             for (int i = 0; i < vetorFibonacci.length; i++) {
-                digitoAnterior1 = 1;
-                digitoFibonacci =  digitoAnterior1 + digitoAnterior2;
+                novoDigitoFibonacci = digito1 + digito2;
+                digito1 = digito2;
+                digito2++;;
+                vetorFibonacci[i] = novoDigitoFibonacci;
             }
             
+            System.out.println(Arrays.toString(vetorFibonacci));
+            /* 
             //Inserir os digitos Fibonacci no vetor através de uma função
-            //vetorFibonacci[i] = fibonacci(tamanhoVetor);
+            vetorFibonacci[] = calculoFibonacci(tamanhoVetor);
 
             //Exibir o resultado
             System.out.println(Arrays.toString(vetorFibonacci));
 
-            //Somatório das 10 primeiras posições do vetor
-            if (tamanhoVetor >= 10) {
+            //PARTE 2
+            //-----------------------------------------------------------------------------
+            //Somatório das N primeiras posições do vetor
+            if (tamanhoVetor >= N) {
                 //somatorioVetor();
                 System.out.print("O somatório dos 10 primeiros dígitos do vetor equivale a: ");
             } else {
-                System.out.println("O vetor possui menos de 10 digitos, seu somatório equivale a: ");
+                System.out.println("O vetor possui menos de N digitos, seu somatório de todos os dígitos equivale a: ");
             }
+
+            //PARTE 3
+            //-----------------------------------------------------------------------------
             //Metodo que recebe um vetor e um valor
             //Criar um novo vetor com os divisores do número informado
             //Retorna o novo vetor com os elementos dos multiplos do número informado 
+            */
         sc.close();
         
 
