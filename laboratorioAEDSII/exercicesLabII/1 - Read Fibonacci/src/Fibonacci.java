@@ -2,10 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fibonacci {
-    static int calculoFibonacci(){
         
-    }
-    
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
             //PARTE 1
