@@ -2,6 +2,24 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fibonacci {
+
+    static int funcaoVetorFiboniacci(int tamanhoVetorInformado){
+        //Criar um vetor
+        int vetorFibonacci[];
+        vetorFibonacci = new int[tamanhoVetorInformado];
+
+        //Calcular Fibonacci
+        int digito1 = 0, digito2= 1, novoDigitoFibonacci = 0;
+        
+        for (int i = 0; i < vetorFibonacci.length; i++) {
+            novoDigitoFibonacci = digito1 + digito2;
+            digito1 = digito2;
+            digito2++;;
+            vetorFibonacci[i] = novoDigitoFibonacci;
+        }
+        System.out.println(Arrays.toString(vetorFibonacci));
+        return x;
+    }
         
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -12,20 +30,7 @@ public class Fibonacci {
             System.out.print("Informe quantos dígitos terá a Sequência Fibonacci: ");
             tamanhoVetor = sc.nextInt();
 
-            //Criar um vetor
-            int vetorFibonacci[];
-            vetorFibonacci = new int[tamanhoVetor];
-            
-            //Calcular Fibonacci
-            int digito1 = 0, digito2= 1, novoDigitoFibonacci = 0;
-            for (int i = 0; i < vetorFibonacci.length; i++) {
-                novoDigitoFibonacci = digito1 + digito2;
-                digito1 = digito2;
-                digito2++;;
-                vetorFibonacci[i] = novoDigitoFibonacci;
-            }
-            
-            System.out.println(Arrays.toString(vetorFibonacci));
+            funcaoVetorFiboniacci(tamanhoVetor);
             /* 
             //Inserir os digitos Fibonacci no vetor através de uma função
             vetorFibonacci[] = calculoFibonacci(tamanhoVetor);
