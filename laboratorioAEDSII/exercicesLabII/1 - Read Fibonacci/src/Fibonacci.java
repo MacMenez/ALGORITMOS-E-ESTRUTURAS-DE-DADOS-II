@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Fibonacci {
 
-    static int funcaoVetorFiboniacci(int tamanhoVetorInformado){
+    static int[] funcaoVetorFiboniacci(int tamanhoVetorInformado){
         //Criar um vetor
         int vetorFibonacci[];
         vetorFibonacci = new int[tamanhoVetorInformado];
@@ -14,11 +14,14 @@ public class Fibonacci {
         for (int i = 0; i < vetorFibonacci.length; i++) {
             novoDigitoFibonacci = digito1 + digito2;
             digito1 = digito2;
-            digito2++;;
+            digito2 = novoDigitoFibonacci;
+            //Inserir os digitos Fibonacci no vetor através de uma função
             vetorFibonacci[i] = novoDigitoFibonacci;
         }
+        //Exibir o resultado
         System.out.println(Arrays.toString(vetorFibonacci));
-        return x;
+
+        return vetorFibonacci;
     }
         
     public static void main(String[] args) throws Exception {
@@ -32,12 +35,6 @@ public class Fibonacci {
 
             funcaoVetorFiboniacci(tamanhoVetor);
             /* 
-            //Inserir os digitos Fibonacci no vetor através de uma função
-            vetorFibonacci[] = calculoFibonacci(tamanhoVetor);
-
-            //Exibir o resultado
-            System.out.println(Arrays.toString(vetorFibonacci));
-
             //PARTE 2
             //-----------------------------------------------------------------------------
             //Somatório das N primeiras posições do vetor
