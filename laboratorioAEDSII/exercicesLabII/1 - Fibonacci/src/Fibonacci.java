@@ -48,7 +48,14 @@ public class Fibonacci {
 
         for (int i = 0; i < vetorFobinacci.length; i++) {
             if (vetorFobinacci[i] %digitoModulo == 0) {
+                                
+            }
+        }
+
+        for (int i = 0; i < vetorFobinacci.length; i++) {
+            if (vetorFobinacci[i] %digitoModulo == 0) {
                 vetorModulo[i] = vetorFobinacci[i];
+                
             }
         }
         //Retorna o novo vetor com os elementos dos multiplos do número informado

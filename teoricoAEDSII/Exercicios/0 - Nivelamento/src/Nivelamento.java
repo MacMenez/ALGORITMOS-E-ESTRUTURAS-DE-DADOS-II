@@ -9,15 +9,15 @@ public class Nivelamento {
             digitoUsusario = entrada.next();
 
             switch (digitoUsusario) {
-                case '>':
+                case digitoUsusario = '>':
                     System.out.println("Sinal de Maior");
                 break;
                 
-                case '<':
+                case digitoUsusario = '<':
                     System.out.println("Sinal de Menor");
                 break;
 
-                case '=':
+                case digitoUsusario = '=':
                     System.out.println("Sinal de Igual");
                 break;
             
