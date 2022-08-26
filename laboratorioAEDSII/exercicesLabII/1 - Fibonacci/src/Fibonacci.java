@@ -43,14 +43,15 @@ public class Fibonacci {
     }
 
     static void metodoModulo(int[] vetorFobinacci, int digitoModulo) {
-        int vetorModulo[];
-        vetorModulo = new int[digitoModulo];
-
+        int somaModulo = 0;
         for (int i = 0; i < vetorFobinacci.length; i++) {
             if (vetorFobinacci[i] %digitoModulo == 0) {
-                                
+                somaModulo++;
             }
         }
+
+        int vetorModulo[];
+        vetorModulo = new int[somaModulo];
 
         for (int i = 0; i < vetorFobinacci.length; i++) {
             if (vetorFobinacci[i] %digitoModulo == 0) {
@@ -96,7 +97,8 @@ public class Fibonacci {
             int digitoModulo;
             System.out.print("\nInforme o dígito que irá usar para montar o vetor de módulos: ");
             digitoModulo = sc.nextInt();
-
+            //Criar um vetor alternativo para realizar o módulo. use a imaginação
+            //verificar a estrutura de condições do metodo
             metodoModulo(vetorFobinacci, digitoModulo);
             
         sc.close();
