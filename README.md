@@ -6,6 +6,8 @@ Durnate o 2° Período, continuaremos na linguagem de programação JAVA e ampli
 A Disciplina terá divisão entre Teoria e Laboratório, ambos os codigos podem ser encontrados nas divisões abaixo:
 
 - [Teórico AEDS II]()
+    - [Nivelamento]()
+    - [Somatórios]()
 - [Laboratório AEDS II]()
     - [Fibonacci](#)
 
