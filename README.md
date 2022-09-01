@@ -8,8 +8,11 @@ A Disciplina terá divisão entre Teoria e Laboratório, ambos os codigos podem 
 - [Teórico AEDS II]()
     - [Nivelamento]()
     - [Somatórios]()
-- [Laboratório AEDS II]()
+
+- [Laboratório AEDS II](#)
+    - [Introdução À AEDS II](#)
     - [Fibonacci](#)
+    - [Introdução À Linguagem C](#)
 
 Como IDE utilizaremos o ECLIPSE. Outras opções de IDE Online:
 - [Replit](https://replit.com/languages/java10).
