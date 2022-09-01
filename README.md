@@ -13,6 +13,7 @@ A Disciplina terá divisão entre Teoria e Laboratório, ambos os codigos podem 
     - [Introdução À AEDS II](#)
     - [Fibonacci](#)
     - [Introdução À Linguagem C](#)
+    - [Recursividade Em C](#)
 
 Como IDE utilizaremos o ECLIPSE. Outras opções de IDE Online:
 - [Replit](https://replit.com/languages/java10).
