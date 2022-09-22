@@ -2,6 +2,8 @@ import java.security.KeyStore.Entry.Attribute;
 
 //Faça uma classe Animal
 public class Animal {
+      
+    private String nome; //Atributo privado “nome”
     // método abstrato "fala"
     public void fala() {
         
@@ -14,7 +16,6 @@ public class Animal {
     } 
 
     public static void main(String[] args) throws Exception {
-        //Atributo privado “nome”
-        private String nome;     
+        
     }
 }
