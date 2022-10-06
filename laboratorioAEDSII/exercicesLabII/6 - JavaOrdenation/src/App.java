@@ -13,9 +13,10 @@ public class App {
         System.out.printf("Tempo total em Segundos: %.5f segundos \n", (tempoFinal - tempoInicial)/1000.0);
 
         //Ordenação do vetor com QuickSort
-        quickSortY(vetorNumeroAleatorio, 0, vetorNumeroAleatorio.length-1);
+        ordenarQuickSort(vetorNumeroAleatorio);
 
         //Ordenação do vetor com HeapSort
+        ordenarHeapSort(vetorNumeroAleatorio);
     }
 
     public static double [] vetorRandom() {
@@ -30,7 +31,31 @@ public class App {
         return vetorNumeroAleatorio;
     }
 
-    public static void quickSortY(double[] vetorNumeroAleatorio, int inicio, int finalL) {
+    public static double [] ordenarQuickSort (double[] vetorNumeroAleatorio) {
+        double esq = vetorNumeroAleatorio[0], dir = vetorNumeroAleatorio[n-1];
+        double i = esq, j = dir, pivo = vetorQuickSort[(esq+dir)/2];
+        while (i <= j) {
+            while (vetorQuickSort[i] < pivo){
+                i++;
+                while (vetorQuickSort[j] > pivo){
+                    j--;
+                    if (i <= j){
+                        swap(i, j);
+                        i++;
+                        j--; 
+                    }
+                }
+                
+            }
+        }
+        if (esq < j){
+            quicksort(esq, j);
+        }
         
+        if (i < dir){
+            quicksort(i, dir);
+        }
+
+        return vetorQuickSort;
     }
 }
