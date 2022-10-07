@@ -1,3 +1,16 @@
+/*
+    OBSERVAÇÕES: 
+    1 - HeapSort - apresentando erro, segui o código do professor. Em teste isolado, ele apresentou o vetor em forma decrescente
+    não soube o porque. Neste programa ele deu erro com variáveis que não consegui resolver.
+
+    2 - QuickSort - apesar de usar o código do professor Diego e da porfessora Marta, em testes isolados o da porfessora Marta
+    não funcionou e  o do professor Diego, ordenava os vetores mas no estilo "número sim/número não"
+
+    3 - A questão 5 tem como resposta os IF utilizados no final do main.
+
+    4 - Ao usar números muito grandes, o programa da erro de quantidade me memória e não é executado
+*/
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -6,7 +19,7 @@ public class App {
         //Calcular Tempo de Execução
         Long gerar_dados_tempoInicial = System.currentTimeMillis();
             //Função que gere 1 milhão de dados
-            int tamanhoVetor = 10;//1000000
+            int tamanhoVetor = 1000000; //1.000.000
             double [] vetorNumeroAleatorio = vetorRandom(tamanhoVetor);
         Long gerar_dados_tempoFinal = System.currentTimeMillis();
 
