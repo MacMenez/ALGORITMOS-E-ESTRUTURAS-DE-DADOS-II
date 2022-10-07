@@ -46,24 +46,24 @@ public class App {
 
         System.out.println(Arrays.toString(vetorNumeroAleatorio)); 
         System.out.printf("HeapSort - Tempo total em Segundos: %.5f segundos \n\n", (heapSort_tempoFinal - heapSort_tempoInicial)/1000.0);
-
+        
         //Comparativo de Algoritmos de Ordenações
         vetorNumeroAleatorio = vetorRandom(tamanhoVetor);
         Long tempoComparacao_inicioQuickSort = System.currentTimeMillis();
             for (int i = 0; i < 10; i++) {
-                System.out.printf("Total de Execuções do QuickSort: %d \n\n", i);
+                System.out.printf("Total de Execuções do QuickSort: %d \n", i);
                 ordenarQuickSort(vetorNumeroAleatorio, esq, dir);
             }
         Long tempoComparacao_fimQuickSort = System.currentTimeMillis();
-
+ 
         System.out.println(Arrays.toString(vetorNumeroAleatorio));
         double tempoQuick;
         System.out.printf("Tempo total em Segundos: %.5f segundos \n\n", tempoQuick = ((tempoComparacao_fimQuickSort - tempoComparacao_inicioQuickSort)/1000.0));
-        
+
         vetorNumeroAleatorio = vetorRandom(tamanhoVetor);
         Long tempoComparacao_inicioHeapSort = System.currentTimeMillis();
             for (int i = 0; i < 10; i++) {
-                System.out.printf("Total de Execuções do HeapSort: %d \n\n", i);
+                System.out.printf("Total de Execuções do HeapSort: %d \n", i);
                 ordenarHeapSort(vetorNumeroAleatorio, vetorNumeroAleatorio.length-1);
             }
         Long tempoComparacao_fimHeapSort = System.currentTimeMillis();
